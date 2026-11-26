@@ -1,0 +1,14 @@
+name: Feature request
+description: Suggest an improvement to Saman.
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What are you trying to do?
+      description: Describe your current workflow and where you get stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested improvement

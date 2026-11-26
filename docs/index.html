@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141126">
+  <title>Saman — Translate where you read</title>
+  <meta name="description" content="Select text in a Mac app and translate it on your device, right beside your selection.">
+  <meta property="og:title" content="Saman — Translate where you read">
+  <meta property="og:description" content="Select text in a Mac app and translate it on your device, right beside your selection.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://israelor6.github.io/saman/">
+  <meta property="og:image" content="https://israelor6.github.io/saman/assets/translation.webp">
+  <link rel="canonical" href="https://israelor6.github.io/saman/">
+  <link rel="alternate" hreflang="en" href="https://israelor6.github.io/saman/">
+  <link rel="alternate" hreflang="he" href="https://israelor6.github.io/saman/he/">
+  <link rel="icon" href="./assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./"><img src="./assets/icon.png" alt="" width="41" height="41"><span>Saman</span></a>
+    <nav aria-label="Saman">
+      <a class="nav-install" href="#install">Installation</a>
+      <a href="https://github.com/israelor6/saman">GitHub</a>
+      <a class="language-link" href="./he/" lang="he">עברית</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">On-device translation for macOS</p>
+        <h1>Translate where<br><em>you read.</em></h1>
+        <p class="hero-intro">Select a word or sentence in a Mac app. A small bubble gives you the translation right there.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/israelor6/saman/releases/latest/download/Saman-macOS.zip">Download for Mac</a>
+          <a class="button secondary" href="https://github.com/israelor6/saman/releases">View releases</a>
+        </div>
+        <p class="requirements">Apple silicon · macOS 27 or later</p>
+      </div>
+      <figure class="demo">
+        <div class="demo-stage">
+          <div class="demo-orbit" aria-hidden="true"></div>
+          <div class="note">
+            <div class="note-top"><span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span><span>Interactive example</span></div>
+            <div class="note-line" lang="he" dir="rtl"><mark>הרכבת מגיעה לתחנה בצהריים.</mark></div>
+          </div>
+          <details class="demo-result" open>
+            <summary aria-label="Show or hide example translation"><span aria-hidden="true">A</span></summary>
+            <img src="./assets/translation.webp" alt="Saman displays the selected Hebrew sentence and its English translation" width="800" height="466">
+          </details>
+        </div>
+        <figcaption>Try the purple bubble to show or hide the translation.</figcaption>
+      </figure>
+    </section>
+
+    <section class="feature-section">
+      <div class="wrap feature-grid">
+        <div class="feature-copy">
+          <h2>Choose your languages.<br>Switch either way.</h2>
+          <p>Choose a pair that Apple Translation supports in both directions. Saman detects the language of your selection. Switch the direction whenever you need to.</p>
+          <p>Change your language pair or interface language in Settings. Saman’s interface is available in English and Hebrew.</p>
+        </div>
+        <img class="settings-shot" src="./assets/settings.webp" alt="Saman Settings shows a choice of two languages and options for interface language and login" width="1280" height="1120" loading="lazy">
+        <div class="feature-detail">
+          <span class="keyset" dir="ltr"><kbd>⌥</kbd><kbd>⇧</kbd><kbd>T</kbd></span>
+          <h3>Keep reading.</h3>
+          <p>Drag the translation aside, copy it, or dismiss it when you’re done. The keyboard shortcut works wherever Saman can read your selection.</p>
+        </div>
+        <div class="feature-detail" id="privacy">
+          <h3>Your text stays on your Mac.</h3>
+          <p>Saman translates with Apple’s on-device Translation framework. There’s no Saman account, analytics, or translation server.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="install wrap" id="install">
+      <h2>Get started on your Mac.</h2>
+      <ol class="steps">
+        <li><h3>Open Saman</h3><p>Download the ZIP, unzip it, and open Saman.app. On first launch, Saman can copy itself to Applications.</p></li>
+        <li><h3>Choose two languages</h3><p>Pick the languages you want to translate between. macOS may ask to download the models on first use.</p></li>
+        <li><h3>Allow Accessibility</h3><p>Grant access so Saman can read your selection. Select some text and click the purple bubble, or press ⌥⇧T.</p></li>
+      </ol>
+      <p class="signing"><strong>Current release: ad hoc signed, without Apple notarization.</strong> If macOS blocks the first launch, follow Apple’s instructions for opening an unnotarized app you trust. <a href="https://support.apple.com/en-us/102445">Apple’s instructions</a>.</p>
+    </section>
+
+    <section class="faq wrap">
+      <h2>Questions</h2>
+      <div class="questions">
+        <details><summary>Why does Saman need Accessibility?</summary><p>macOS uses that permission to let Saman read selected text and place its bubble beside it. The copied-text command works without it.</p></details>
+        <details><summary>What if the bubble doesn’t appear?</summary><p>Some apps don’t make selection data available through Accessibility. Copy the text, then choose Translate Copied Text from the Saman menu.</p></details>
+        <details><summary>Can I build Saman from source?</summary><p>Yes. The repository contains Saman’s Swift source, build scripts, and contribution instructions. <a href="https://github.com/israelor6/saman/blob/main/CONTRIBUTING.md">Contribute on GitHub</a>.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">
+    <a class="brand" href="./"><img src="./assets/icon.png" alt="" width="36" height="36"><span>Saman</span></a>
+    <p>Open source under the MIT License</p>
+    <nav aria-label="Open source under the MIT License">
+      <a href="https://github.com/israelor6/saman">Source code</a>
+      <a href="https://github.com/israelor6/saman/issues/new/choose">Report a bug</a>
+      <a href="https://github.com/israelor6/saman/blob/main/LICENSE">License</a>
+    </nav>
+  </footer>
+</body>
+</html>

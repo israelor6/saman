@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible problem in Saman.
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Saman and macOS versions
+      placeholder: "Saman 1.5, macOS 27.1"
+    validations:
+      required: true
+  - type: input
+    id: source-app
+    attributes:
+      label: App where you selected the text
+      placeholder: "Safari, TextEdit, or not applicable"
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: What happened?
+      description: Include steps, the expected result, and the actual result. Use sample text in place of personal selections.
+    validations:
+      required: true
