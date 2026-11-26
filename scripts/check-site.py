@@ -42,6 +42,16 @@ for filename, locale, source, translation, setup in pages:
     for asset in (translation, setup):
         check((ASSETS / asset).is_file(), True, f"{filename} asset {asset}")
 
+    for tag, attribute, extension in (("video", "poster", "jpg"), ("source", "src", "mp4")):
+        references = [
+            (path.parent / urlsplit(attrs[attribute]).path).resolve()
+            for name, attrs in page.elements
+            if name == tag and attribute in attrs
+        ]
+        expected = ASSETS / f"demo-{locale}.{extension}"
+        check(references, [expected], f"{filename} localized demo {attribute}")
+        check(expected.is_file(), True, f"{filename} demo asset {expected.name}")
+
     check(
         [attrs.get("lang") for tag, attrs in page.elements if tag == "html"],
         [locale],
@@ -76,4 +86,4 @@ for filename, translation in (("README.md", "translation-en-es.webp"), ("README.
         f"{filename} translation screenshot",
     )
 
-print("Verified the demo language, screenshots and social preview for each site locale and README.")
+print("Verified localized site videos, examples, screenshots, social previews and README screenshots.")

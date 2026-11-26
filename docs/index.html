@@ -44,22 +44,33 @@
         </div>
         <p class="requirements">Apple silicon · macOS 27 or later</p>
       </div>
-      <figure class="demo">
-        <div class="demo-stage">
-          <div class="demo-orbit" aria-hidden="true"></div>
-          <div class="note">
-            <div class="note-top"><span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span><span>Interactive example</span></div>
-            <details class="demo-result" open>
-              <summary class="note-line" dir="ltr" aria-describedby="example-selection" aria-label="Show or hide example translation">
-                <mark id="example-selection" lang="en">The train arrives at noon.</mark>
-                <span class="demo-bubble" aria-hidden="true"><span>A</span></span>
-              </summary>
-              <img src="./assets/translation-en-es.webp" alt="Saman translating ‘The train arrives at noon’ into Spanish: ‘El tren llega al mediodía’." width="800" height="466">
-            </details>
+      <div class="demo">
+        <figure class="demo-film">
+          <video controls playsinline preload="none" width="960" height="600"
+                 poster="./assets/demo-en.jpg" aria-label="Watch how Saman translates a message in place" aria-describedby="demo-caption">
+            <source src="./assets/demo-en.mp4" type="video/mp4">
+            <a href="./assets/demo-en.mp4">Download the demo video</a>
+          </video>
+          <figcaption id="demo-caption">10 seconds · Select text, click the purple bubble, and read the translation in the same app.</figcaption>
+        </figure>
+        <details class="demo-example">
+          <summary>Try it yourself</summary>
+          <div class="demo-stage">
+            <div class="demo-orbit" aria-hidden="true"></div>
+            <div class="note">
+              <div class="note-top"><span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span><span>Interactive example</span></div>
+              <details class="demo-result" open>
+                <summary class="note-line" dir="ltr" aria-describedby="example-selection" aria-label="Show or hide example translation">
+                  <mark id="example-selection" lang="en">The train arrives at noon.</mark>
+                  <span class="demo-bubble" aria-hidden="true"><span>A</span></span>
+                </summary>
+                <img src="./assets/translation-en-es.webp" alt="Saman translating ‘The train arrives at noon’ into Spanish: ‘El tren llega al mediodía’." width="800" height="466">
+              </details>
+            </div>
           </div>
-        </div>
-        <figcaption>Try the purple bubble to show or hide the translation.</figcaption>
-      </figure>
+          <p class="demo-instructions">Try the purple bubble to show or hide the translation.</p>
+        </details>
+      </div>
     </section>
 
     <section class="feature-section">
