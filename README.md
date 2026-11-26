@@ -7,10 +7,11 @@
 <p align="center">
   <a href="https://israelor6.github.io/saman/">Website</a> ·
   <a href="https://github.com/israelor6/saman/releases/latest">Download for Mac</a> ·
-  <a href="README.he.md" lang="he">עברית</a>
+  <a href="https://israelor6.github.io/saman/es/" lang="es">Español</a> ·
+  <a href="README.he.md" hreflang="he">Hebrew</a>
 </p>
 
-<p align="center"><img src="docs/assets/translation.webp" alt="Saman displays the Hebrew source and its English translation together in a small window" width="550"></p>
+<p align="center"><img src="docs/assets/translation-en-es.webp" alt="Saman displays an English sentence and its Spanish translation" width="550"></p>
 
 ## How it works
 
