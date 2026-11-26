@@ -2,7 +2,7 @@
 
 <h1 align="center">Saman</h1>
 
-<p align="center">Translate selected text without leaving the app you’re reading in.</p>
+<p align="center">Translate text from any Mac app where you can select or copy it.</p>
 
 <p align="center">
   <a href="https://israelor6.github.io/saman/">Website</a> ·
@@ -14,7 +14,7 @@
 
 ## How it works
 
-Choose two languages in setup. Select a word or sentence in a supported app and click the purple bubble next to it, or press <kbd>⌥</kbd><kbd>⇧</kbd><kbd>T</kbd>. Saman detects the direction between your chosen languages. You can flip the direction, drag the translation out of the way, or copy it.
+Choose two languages in setup. Select a word or sentence in a browser, document, or chat and click the purple bubble next to it, or press <kbd>⌥</kbd><kbd>⇧</kbd><kbd>T</kbd>. Saman detects the direction between your chosen languages. You can flip the direction, drag the translation out of the way, or copy it.
 
 The interface is available in English and Hebrew. Change it, your translation pair, and Open at Login under **Saman → Settings**.
 

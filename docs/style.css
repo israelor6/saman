@@ -31,7 +31,7 @@ nav .language-link { border: 1px solid var(--line); padding: .28rem .7rem; borde
 .hero { display: grid; grid-template-columns: .95fr 1fr; align-items: center; gap: clamp(1.2rem, 5vw, 5.25rem); padding-block: clamp(3.25rem, 9vw, 7rem); }
 .hero-copy { min-inline-size: 0; }
 .eyebrow { color: var(--mint); font-weight: 650; font-size: .9rem; margin-block-end: .95rem; }
-h1 { font-size: clamp(2.45rem, 6.4vw, 4.7rem); line-height: 1.01; letter-spacing: -.055em; font-weight: 780; }
+h1 { font-size: clamp(2.45rem, 5.65vw, 4.2rem); line-height: 1.01; letter-spacing: -.055em; font-weight: 780; }
 h1 em { font-style: normal; color: #c7bbff; }
 .hero-intro { color: var(--muted); font-size: clamp(1.03rem, 1.8vw, 1.24rem); max-inline-size: 33rem; margin-block-start: 1.2rem; }
 .actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-block-start: 1.75rem; }

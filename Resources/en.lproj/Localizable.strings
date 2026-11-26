@@ -22,7 +22,7 @@
 "panel.retry" = "Try Again";
 "panel.unsupported" = "This translation direction isn’t available on this version of macOS.";
 "panel.failed" = "Translation failed. Try again. On first use, you may need to approve the language download.";
-"setup.tagline" = "Translate where you read";
+"setup.tagline" = "Translate selected text";
 "setup.edit.title" = "Translation languages";
 "setup.title" = "Choose two languages";
 "setup.description" = "Saman detects the language you select and translates it into the other one.";
