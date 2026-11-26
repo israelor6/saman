@@ -83,10 +83,14 @@ struct Saman {
         let languages: [TranslationLanguage] = [.english, .hebrew, spanish]
         precondition(InterfaceLanguage.preferred(from: ["he-IL", "en-US"]).layoutDirection == .rightToLeft)
         precondition(InterfaceLanguage.preferred(from: ["en-GB", "he-IL"]).layoutDirection == .leftToRight)
-        precondition(InterfaceLanguage.preferred(from: ["es-ES", "he-IL"]) == .hebrew)
-        precondition(InterfaceLanguage.preferred(from: ["es-ES"]) == .english)
+        precondition(InterfaceLanguage.preferred(from: ["es-ES", "he-IL"]) == .spanish)
+        precondition(InterfaceLanguage.preferred(from: ["fr-FR", "es-MX"]).layoutDirection == .leftToRight)
+        precondition(InterfaceLanguage.preferred(from: ["fr-FR", "es-MX"]) == .spanish)
+        precondition(InterfaceLanguage.preferred(from: ["fr-FR"]) == .english)
         precondition(InterfaceLanguage.english.string("app.name") == "Saman")
         precondition(InterfaceLanguage.hebrew.string("app.name") == "סמן")
+        precondition(InterfaceLanguage.spanish.string("app.language.name") == "Español")
+        precondition(InterfaceLanguage.spanish.string("menu.settings") == "Ajustes…")
         precondition(LanguagePair.suggested(for: "en-GB", from: languages) == .standard)
         precondition(LanguagePair.suggested(for: "he-IL", from: languages).ids == ["he", "en"])
         precondition(LanguagePair.suggested(for: "es-MX", from: languages).ids == ["es", "en"])
@@ -102,8 +106,11 @@ struct Saman {
             precondition(InterfaceLanguagePreference.saved(in: defaults).resolve(preferredLanguages: ["en-US"]) == .hebrew)
             InterfaceLanguagePreference.english.save(in: defaults)
             precondition(InterfaceLanguagePreference.saved(in: defaults).resolve(preferredLanguages: ["he-IL"]) == .english)
+            InterfaceLanguagePreference.spanish.save(in: defaults)
+            precondition(InterfaceLanguagePreference.saved(in: defaults).resolve(preferredLanguages: ["he-IL"]) == .spanish)
             InterfaceLanguagePreference.system.save(in: defaults)
             precondition(InterfaceLanguagePreference.saved(in: defaults).resolve(preferredLanguages: ["he-IL"]) == .hebrew)
+            precondition(InterfaceLanguagePreference.saved(in: defaults).resolve(preferredLanguages: ["es-AR"]) == .spanish)
             precondition(LanguagePair.saved(in: defaults) == spanishEnglish)
         }
 

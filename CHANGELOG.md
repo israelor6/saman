@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6 · 2026-11-25
+
+- Added a Spanish interface for menus, setup, settings, and translation. Select **Español** in Settings or follow your macOS language preferences.
+
 ## 1.5 · 2026-11-25
 
 First public release.

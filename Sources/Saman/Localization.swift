@@ -4,6 +4,7 @@ import SwiftUI
 enum InterfaceLanguage: String {
     case english = "en"
     case hebrew = "he"
+    case spanish = "es"
 
     static var current: Self {
         InterfaceLanguagePreference.saved().resolve(preferredLanguages: Locale.preferredLanguages)
@@ -37,6 +38,7 @@ enum InterfaceLanguagePreference: String, CaseIterable, Identifiable {
     case system
     case english = "en"
     case hebrew = "he"
+    case spanish = "es"
 
     private static let key = "interfaceLanguage"
 
@@ -47,6 +49,7 @@ enum InterfaceLanguagePreference: String, CaseIterable, Identifiable {
         case .system: return localized("settings.language.system")
         case .english: return InterfaceLanguage.english.string("app.language.name")
         case .hebrew: return InterfaceLanguage.hebrew.string("app.language.name")
+        case .spanish: return InterfaceLanguage.spanish.string("app.language.name")
         }
     }
 

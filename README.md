@@ -11,13 +11,13 @@
   <a href="README.he.md" hreflang="he">Hebrew</a>
 </p>
 
-<p align="center"><img src="docs/assets/translation-en-es.webp" alt="Saman displays an English sentence and its Spanish translation" width="550"></p>
+<p align="center"><img src="docs/assets/translation-he-en.webp" alt="Saman translates a Hebrew sentence into English" width="550"></p>
 
 ## How it works
 
 Choose two languages in setup. Select a word or sentence in a browser, document, or chat and click the purple bubble next to it, or press <kbd>⌥</kbd><kbd>⇧</kbd><kbd>T</kbd>. Saman detects the direction between your chosen languages. You can flip the direction, drag the translation out of the way, or copy it.
 
-The interface is available in English and Hebrew. Change it, your translation pair, and Open at Login under **Saman → Settings**.
+The interface is available in English, Hebrew, and Spanish. Change it, your translation pair, and Open at Login under **Saman → Settings**.
 
 ## Install
 

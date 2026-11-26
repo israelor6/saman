@@ -6,7 +6,7 @@ Search [existing issues](https://github.com/israelor6/saman/issues) first. For a
 
 ## Send a change
 
-Fork the repo, branch from `main`, and open a pull request. Explain the behavior change and what you verified. For visual changes, share screenshots using sample data. Keep equivalent copy in both `Resources/en.lproj` and `Resources/he.lproj`, and check keyboard interaction and reading direction in both languages.
+Fork the repo, branch from `main`, and open a pull request. Explain the behavior change and what you verified. For visual changes, share screenshots using sample data. Keep equivalent copy in all interface languages under `Resources/*.lproj`, and check keyboard interaction and reading direction in English, Hebrew, and Spanish.
 
 Build on an Apple silicon Mac with the macOS 27 SDK.
 
