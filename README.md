@@ -11,7 +11,7 @@
   <a href="README.he.md" hreflang="he">Hebrew</a>
 </p>
 
-<p align="center"><img src="docs/assets/translation-he-en.webp" alt="Saman translates a Hebrew sentence into English" width="550"></p>
+<p align="center"><img src="docs/assets/translation-en-es.webp" alt="Saman displays an English sentence and its Spanish translation" width="550"></p>
 
 ## How it works
 
